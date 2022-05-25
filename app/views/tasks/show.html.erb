@@ -1,13 +1,30 @@
-<h2><%= @task.title %></h2>
-<%= link_to 'Edit this task', edit_task_path %>
-<p><%=  @task.details  %></p>
+<div class="task-details">
+  <div class="task-details-header">
+    <h2><%= @task.title %></h2>
+    <div class="edit-btn">
+      <i class="fas fa-pencil"></i>
+      <%= link_to 'Edit this task', edit_task_path %>
+    </div>
+  </div>
 
-<% if @task.completed %>
-  <p>This task is completed</p>
-<% else %>
-  <p>This task is not completed yet</p>
-<% end %>
+  <div class="task-desc">
+    <div><%=  @task.details  %></div>
+  </div>
 
-<hr>
+  <% if @task.completed %>
+    <div class="status">
+      <i class="far fa-check-square"></i>
+      <p>This task is completed</p>
+    </div>
+  <% else %>
+    <div class="status">
+      <i class="far fa-square"></i>
+      <p>This task is completed</p>
+    </div>
+  <% end %>
 
-<%= link_to "Back to list", tasks_path %>
+  <hr>
+
+  <i class="fas fa-angle-left"></i>
+  <%= link_to "Back to list", tasks_path, :class => "link-to-other-page"%>
+</div>

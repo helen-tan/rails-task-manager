@@ -24,3 +24,41 @@ a {
 .link-to-other-page {
   font-weight: bold;
 }
+
+.task-details-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.edit-btn {
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+.edit-btn {
+  padding: 10px;
+}
+
+.edit-btn a{
+  color: black;
+}
+
+.task-desc {
+ border: 1px solid #dddddd;
+ background-color: #FAFBFB;
+ border-radius: 5px;
+ padding: 18px;
+}
+
+.task-details p {
+  margin: 16px 0;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+}
+.status i {
+  margin-right: 10px;
+}
