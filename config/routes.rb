@@ -7,11 +7,13 @@ Rails.application.routes.draw do
   get "tasks/new", to: "tasks#new", as: :new_task # new needs to be before show
   post "tasks", to: "tasks#create"
 
-  # See the details of one task
-  get "tasks/:id", to: "tasks#show", as: :task
 
   # Update a task: get task editting form + patch to db
+  get "tasks/:id", to: "tasks#show", as: :task
   get "tasks/:id/edit", to: "tasks#edit", as: :edit_task
+  # See the details of one task
   patch "tasks/:id", to: "tasks#update"
+  # Delete a task
+  delete "tasks/:id", to: "tasks#destroy"
 
 end
