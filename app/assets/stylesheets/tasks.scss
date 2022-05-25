@@ -1,3 +1,26 @@
 // Place all the styles related to the tasks controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+$light-blue: #377BB5;
+
+body {
+  margin: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: $light-blue;
+}
+
+.fas.fa-circle {
+  font-size: 3px;
+}
+
+.fas.fa-plus {
+  color: $light-blue;
+}
+
+.link-to-other-page {
+  font-weight: bold;
+}
